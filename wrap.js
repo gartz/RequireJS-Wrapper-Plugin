@@ -1,7 +1,8 @@
 /** @license
  * RequireJS Wrap Plugin
  * Author: Gabriel Giannattasio
- * Version: 0.0.1 (2012/04/05)
+ * Created on: 2012/04/05
+ * Version: 0.0.2
  * Released under the MIT license
  */
 (function () {define({
