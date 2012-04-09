@@ -33,6 +33,16 @@ wrapper: {
 }
 ```
 
+Or you can use a function to get the return like:
+
+```js
+wrapper: {
+  globals: {
+    'lib/underscore': function() { return window._.noConflict(); }
+  }
+}
+```
+
 ### dependence config collection
 
 Some libs can have dependencies, like `Backbone`, so this feature is to solve this problem very simple.
