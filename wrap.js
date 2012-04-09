@@ -19,7 +19,9 @@
             var name = toLoad[arguments.length-1];
             var r = arguments[arguments.length-1];
             var global;
-            if(cfg.globals[name]) {
+            if(cfg.globals[name] && typeof cfg.globals[name] === "function") {
+                global = cfg.globals[name]();
+            } else if(cfg.globals[name]) {
                 if(r) this[cfg.globals[name]] = r;
                 global = this[cfg.globals[name]];
             }
