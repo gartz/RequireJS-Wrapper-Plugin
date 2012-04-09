@@ -10,8 +10,8 @@ This plugin support RequireJS Optimizer.
 It's very simple to configure:
 
 * wrapper
-** globals
-** deps
+ * globals
+ * deps
 
 ### globals config collection
 
