@@ -1,0 +1,6 @@
+[submodule "example/requirejs"]
+	path = example/requirejs
+	url = git://github.com/jrburke/requirejs.git
+[submodule "example/underscorejs"]
+	path = example/underscorejs
+	url = git://github.com/documentcloud/underscore.git
