@@ -5,6 +5,12 @@ doesn't have support to AMD pattern, but declare some global var.
 
 This plugin support RequireJS Optimizer.
 
+Some libs that this plugin will help you:
+
+* Underscore: http://documentcloud.github.com/underscore/
+* Backbone: http://documentcloud.github.com/backbone/
+* Zepto: http://zeptojs.com/
+
 ## Configuration
 
 It's very simple to configure:
