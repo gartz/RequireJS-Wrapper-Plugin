@@ -1,0 +1,63 @@
+RequireJS-Wrapper-Plugin
+========================
+
+This plugin for RequireJS will give support to load javascript files that doesn't have support 
+to AMD pattern, but declare some global var.
+
+This plugin support RequireJS Optimizer.
+
+Configuration
+-------------
+
+It's very simple to configure:
+
+* wrapper
+** globals
+** deps
+
+globals config collection
+-------------------------
+
+In globals you must declare your include path as key and the generated global as value.
+
+Exemple for `underscore`:
+
+~~~
+wrapper: {
+  globals: {
+    'lib/underscore': '_'
+  }
+}
+~~~
+
+dependence config collection
+----------------------------
+
+Some libs can have dependencies, like `Backbone`, so this feature is to solve this problem very simple.
+Because you are working with libs that don't support AMD pattern, you will need to setup their depences in the
+config file.
+
+Exemple for `Backbone`:
+
+~~~
+wrapper: {
+  globals: {
+    'lib/underscore': '_',
+    'lib/backbone': 'Backbone'
+  },
+  deps: {
+    'lib/backbone': ['lib/underscore']
+  }
+}
+~~~
+
+Using the require feature
+-------------------------
+
+It's very simple, you just need to require your target with plugin wrap, example:
+
+~~~
+define(['wrap!underscore'], function( _ ) {
+  console.debug(_); // returns underscore content
+});
+~~~
