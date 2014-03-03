@@ -1,5 +1,9 @@
 # RequireJS-Wrapper-Plugin
 
+[![Analytics](https://ga-beacon.appspot.com/UA-24619548-7/RequireJS-Wrapper-Plugin/readme)](https://github.com/igrigorik/ga-beacon)
+
+## This plugin ins deprecated, use RequireJS 2.x shim for same result.
+
 This plugin for [RequireJS](http://requirejs.org) will give support to load javascript files that 
 doesn't have support to AMD pattern, but declare some global var.
 
